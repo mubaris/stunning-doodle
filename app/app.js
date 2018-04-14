@@ -14,7 +14,9 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 import createHistory from 'history/createBrowserHistory';
+// import 'bulma/css/bulma.css';
 import 'sanitize.css/sanitize.css';
+import 'bulma/css/bulma.css';
 
 // Import root app
 import App from 'containers/App';
@@ -44,6 +46,7 @@ import { translationMessages } from './i18n';
 
 // Import CSS reset and Global Styles
 import './global-styles';
+import './emoji.css';
 
 // Create redux store with history
 const initialState = {};

@@ -1412,6 +1412,10 @@ builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
 
+bulma@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.7.0.tgz#d480170c8768cb774ff606a5aaf5deaa92cda622"
+
 bytes@2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-2.3.0.tgz#d5b680a165b6201739acb611542aabc2d8ceb070"
@@ -2429,6 +2433,16 @@ elliptic@^6.0.0:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
+
+emoji-datasource@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/emoji-datasource/-/emoji-datasource-4.0.0.tgz#3fc9c0c2f4fb321d9291138819f6d100603d3e2f"
+
+emoji-js@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/emoji-js/-/emoji-js-3.4.0.tgz#dabdeda60c92d1948a5177e51ba9421d2029b052"
+  dependencies:
+    emoji-datasource "4.0.0"
 
 emoji-regex@^6.1.0:
   version "6.5.1"
@@ -6413,6 +6427,10 @@ rc@^1.1.2, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-animations@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-animations/-/react-animations-1.0.0.tgz#d96222920dfeabec8984d9b2ef2c5a5aadb40f06"
+
 react-dom@15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.1.tgz#2cb0ed4191038e53c209eb3a79a23e2a4cf99470"
@@ -8142,3 +8160,7 @@ yauzl@^2.2.1:
   dependencies:
     buffer-crc32 "~0.2.3"
     fd-slicer "~1.0.1"
+
+zifi@^0.6.5:
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/zifi/-/zifi-0.6.5.tgz#79a3308365b1c2a3a8da9e6aa3b196e9e8cd69e5"
