@@ -1,0 +1,13 @@
+@import 'bulma/sass/utilities/initial-variables.sass';
+// @import 'bulma/sass/utilities/derived-variables.sass';
+// @import 'bulma/sass/components/navbar.sass';
+
+$main-bg: #141411;
+$main-color: #ffffff;
+
+// $navbar-height: 4rem;
+$navbar-background-color: $main-bg;
+$navbar-item-color: $main-color;
+$navbar-item-hover-color: #ff00ff;
+
+@import 'bulma/bulma.sass';

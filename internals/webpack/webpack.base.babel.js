@@ -42,6 +42,23 @@ module.exports = (options) => ({
         use: ['style-loader', 'css-loader'],
       },
       {
+        test: /\.(scss|sass)$/,
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: ['node_modules'],
+            },
+          },
+        ],
+      },
+      {
         test: /\.(eot|svg|otf|ttf|woff|woff2)$/,
         use: 'file-loader',
       },

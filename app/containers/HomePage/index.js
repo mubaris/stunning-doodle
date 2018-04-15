@@ -12,6 +12,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { fadeIn } from 'react-animations';
+import { Link } from 'react-router-dom';
 
 import convertToEmoji from '../../utils/emoji';
 
@@ -20,6 +21,7 @@ const animation = keyframes`${fadeIn}`;
 const FadeInDiv = styled.div`
   animation: 5s ${animation};
 `;
+
 
 const Name = styled.span`
   color: #f35626;
@@ -39,6 +41,24 @@ const Name = styled.span`
 
     to {
       -webkit-filter: hue-rotate(-360deg);
+    }
+  }
+`;
+
+const Portfolio = styled.span`
+  font-size: 120%;
+  -webkit-animation: 2s linear 0s infinite flash;
+  @-webkit-keyframes flash {
+    from,
+    50%,
+    80%,
+    to {
+      opacity: 1;
+    }
+
+    25%,
+    60% {
+      opacity: 0;
     }
   }
 `;
@@ -97,7 +117,11 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                 When I&apos;m excited I build amazing stuff. You can explore
                 some of the things I built in the past
                 <span dangerouslySetInnerHTML={{ __html: explore }} ></span>
-                Just follow <a href="projects">this link</a>
+                See my <Link to="/portfolio" className="portfolio">
+                  <Portfolio>
+                    Portfolio
+                  </Portfolio>
+                </Link>
               </p>
               <p>
                 I stay close to the community and try to keep tabs with the pace

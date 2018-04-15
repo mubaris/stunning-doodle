@@ -11,6 +11,7 @@ injectGlobal`
     background: #141411;
     color: #ffffff;
     line-height: 2.4em;
+    cursor: unset;
   }
 
   body {
@@ -95,5 +96,34 @@ injectGlobal`
   }
   a.before:hover:before,a.after:hover:after{
     width:100%;
+  }
+  .navbar-item:hover {
+    background: #4a4a4a;
+  }
+  .navbar-item.active {
+    background: #ff00ff;
+  }
+  .navbar-item {
+    cursor: pointer;
+  }
+  .navbar-item a {
+    color: #ffffff;
+  }
+  .section {
+    width: 100%;
+    height: 100%;
+  }
+  .center {
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 200%;
+    }
+    > * {
+      font-size: 200%;
+    }
   }
 `;

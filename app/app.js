@@ -16,7 +16,7 @@ import { ConnectedRouter } from 'react-router-redux';
 import createHistory from 'history/createBrowserHistory';
 // import 'bulma/css/bulma.css';
 import 'sanitize.css/sanitize.css';
-import 'bulma/css/bulma.css';
+// import 'bulma/css/bulma.css';
 
 // Import root app
 import App from 'containers/App';
@@ -45,6 +45,7 @@ import configureStore from './configureStore';
 import { translationMessages } from './i18n';
 
 // Import CSS reset and Global Styles
+import './bulma.scss';
 import './global-styles';
 import './emoji.css';
 

@@ -10,16 +10,62 @@
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import styled, { keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
 
-import messages from './messages';
+import convertToEmoji from '../../utils/emoji';
 
-export default class NotFound extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
+const animation = keyframes`${fadeIn}`;
+
+const FadeInDiv = styled.div`
+  animation: 5s ${animation};
+`;
+
+const emojis = [
+  '🤷',
+  '🤷‍♂️',
+  '🙄',
+  '☹',
+  '🙀',
+  '😳',
+  '👀',
+  '🙅',
+  '🧟',
+  '🙆',
+  '🤦',
+  '🙅‍♂️',
+  '🙆‍♂️',
+  '🤦‍♂️',
+  '🧤',
+  '🛑',
+  '🚧',
+  '🚨',
+  '⚰',
+  '🚫',
+  '⛔',
+  '⚠',
+  '❌',
+  '✖',
+  '❎',
+  '‼',
+  '⁉',
+  '❓',
+  '❔',
+  '❕',
+  '❗',
+  '☢',
+];
+
+export default class NotFound extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
+    const emoji = convertToEmoji(emojis[Math.floor(Math.random() * emojis.length)]);
     return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
+      <FadeInDiv>
+        <div className="center">
+          <h1>404</h1>
+          <br /><span dangerouslySetInnerHTML={{ __html: emoji }} ></span>
+        </div>
+      </FadeInDiv>
     );
   }
 }
